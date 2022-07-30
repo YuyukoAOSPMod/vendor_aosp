@@ -14,7 +14,6 @@ $(call inherit-product, vendor/aosp/overlay/overlay.mk)
 # Required packages
 PRODUCT_PACKAGES += \
     LatinIME \
-    Launcher3QuickStep \
     ThemePicker
 
 # Filesystems tools
