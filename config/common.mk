@@ -6,7 +6,7 @@
 #
 
 # Inherit vendor submodules
-$(call inherit-product, vendor/acme/overlay/overlay.mk)
+$(call inherit-product, vendor/aosp/overlay/overlay.mk)
 
 # YuyukoAOSPMod version
 -include vendor/aosp/config/version.mk

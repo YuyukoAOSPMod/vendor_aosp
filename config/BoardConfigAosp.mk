@@ -2,4 +2,4 @@
 include vendor/aosp/config/BoardConfigKernel.mk
 
 # Soong
-include vendor/acme/config/BoardConfigSoong.mk
+include vendor/aosp/config/BoardConfigSoong.mk
