@@ -11,6 +11,9 @@ $(call inherit-product, vendor/aosp/overlay/overlay.mk)
 # YuyukoAOSPMod version
 -include vendor/aosp/config/version.mk
 
+# Sounds
+include vendor/aosp/config/sounds.mk
+
 # Required packages
 PRODUCT_PACKAGES += \
     LatinIME \
