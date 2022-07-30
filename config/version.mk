@@ -20,4 +20,6 @@ MOD_DISPLAY_VERSION := YuyukoAOSPMod-$(MOD_BRANCH)-$(MOD_DATE)
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.yuyuko.aospmod.version=$(MOD_VERSION) \
-    ro.yuyuko.aospmod.build.version=$(MOD_DISPLAY_VERSION)
+    ro.yuyuko.aospmod.branch=$(MOD_BRANCH) \
+    ro.yuyuko.aospmod.build.version=$(MOD_DISPLAY_VERSION) \
+    ro.yuyuko.aospmod.build.type=$(MOD_BUILD_TYPE)
