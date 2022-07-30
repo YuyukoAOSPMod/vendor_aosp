@@ -5,7 +5,19 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-MOD_VERSION := 12.1
+# Version
+MOD_BRANCH := SnowCone-V2
+MOD_BUILD_TYPE := DEBUG
+MOD_DATE := $(shell date -u +%Y%m%d)
+MOD_DEVICE := $(shell echo "$(TARGET_PRODUCT)" | cut -d '_' -f 2,3)
 
-ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.build.version.custom=$(MOD_VERSION)
+ifeq ($(IS_RELEASE), true)
+    MOD_BUILD_TYPE := RELEASE
+endif
+
+MOD_VERSION := YuyukoAOSPMod-$(MOD_BRANCH)-$(MOD_DEVICE)-$(MOD_BUILD_TYPE)-$(MOD_DATE)
+MOD_DISPLAY_VERSION := YuyukoAOSPMod-$(MOD_BRANCH)-$(MOD_DATE)
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.yuyuko.aospmod.version=$(MOD_VERSION) \
+    ro.yuyuko.aospmod.build.version=$(MOD_DISPLAY_VERSION)
