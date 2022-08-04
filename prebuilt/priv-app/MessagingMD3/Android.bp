@@ -1,0 +1,19 @@
+android_app_import{
+    name:"MessagingMD3",
+    apk:"MessagingMD3.apk",
+    presigned: true,
+    dex_preopt:{
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+    overrides:["messaging"],
+}
+
+prebuilt_etc {
+    name: "com.android.messaging.md3_whitelist",
+    product_specific: true,
+    sub_dir: "sysconfig",
+    src: "com.android.messaging.md3_whitelist.xml",
+    filename_from_src: true,
+}
