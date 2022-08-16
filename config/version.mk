@@ -6,8 +6,8 @@
 #
 
 # Version
-MOD_BRANCH := Sekibanki
-MOD_BUILD_TYPE := DEBUG
+MOD_BRANCH := Tsukasa
+MOD_BUILD_TYPE := DEBUG-PREVIEW
 MOD_DATE := $(shell date -u +%Y%m%d)
 MOD_DEVICE := $(shell echo "$(TARGET_PRODUCT)" | cut -d '_' -f 2,3)
 
