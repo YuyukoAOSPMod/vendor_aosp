@@ -1,7 +1,7 @@
 android_app_import{
     name:"MessagingMD3",
     apk:"MessagingMD3.apk",
-    presigned: true,
+    certificate: "platform",
     dex_preopt:{
         enabled: false,
     },
