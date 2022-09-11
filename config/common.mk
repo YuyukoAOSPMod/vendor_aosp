@@ -14,6 +14,8 @@ $(call inherit-product, vendor/aosp/overlay/overlay.mk)
 # Sounds
 include vendor/aosp/config/sounds.mk
 
+include vendor/lawnchair/lawnchair.mk
+
 # Required packages
 PRODUCT_PACKAGES += \
     LatinIME \
