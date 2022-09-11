@@ -8,19 +8,24 @@
 # Inherit vendor submodules
 $(call inherit-product, vendor/aosp/overlay/overlay.mk)
 
+# Include gms makefile
+$(call inherit-product-if-exists, vendor/gms/gms.mk)
+
 # YuyukoAOSPMod version
 -include vendor/aosp/config/version.mk
 
 # Sounds
 include vendor/aosp/config/sounds.mk
 
+# Lawnchair
 include vendor/lawnchair/lawnchair.mk
 
 # Required packages
 PRODUCT_PACKAGES += \
     LatinIME \
     ThemePicker \
-    ViaBrowser
+    ViaBrowser \
+    Updater
 
 # Filesystems tools
 PRODUCT_PACKAGES += \

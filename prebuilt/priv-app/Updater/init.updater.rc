@@ -1,0 +1,2 @@
+on post-fs-data
+    mkdir /data/mod_ota 0770 system system
