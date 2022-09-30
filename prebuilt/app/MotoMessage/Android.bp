@@ -1,0 +1,24 @@
+android_app_import{
+    name:"MotoMessage",
+    apk:"MotoMessage.apk",
+    certificate: "platform",
+    owner: "moto",
+    dex_preopt:{
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+    overrides:["messaging"],
+
+    required: [
+        "com.android.messaging_whitelist"
+    ],
+}
+
+prebuilt_etc {
+    name: "com.android.messaging_whitelist",
+    product_specific: true,
+    sub_dir: "sysconfig",
+    src: "com.android.messaging_whitelist.xml",
+    filename_from_src: true,
+}

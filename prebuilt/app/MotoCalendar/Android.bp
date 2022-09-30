@@ -1,0 +1,11 @@
+android_app_import{
+    name:"MotoCalendar",
+    apk:"MotoCalendar.apk",
+    certificate: "platform",
+    owner: "moto",
+    dex_preopt:{
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}

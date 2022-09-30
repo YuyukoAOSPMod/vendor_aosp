@@ -25,7 +25,7 @@ PRODUCT_PACKAGES += \
     LatinIME \
     ThemePicker \
     ViaBrowser \
-    Updater
+    MotoCalendar
 
 # Filesystems tools
 PRODUCT_PACKAGES += \
