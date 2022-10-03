@@ -14,6 +14,5 @@ PRODUCT_COPY_FILES += \
 
 # Telephony packages
 PRODUCT_PACKAGES += \
-    MotoMessage \
     MotoCompass \
     Stk
