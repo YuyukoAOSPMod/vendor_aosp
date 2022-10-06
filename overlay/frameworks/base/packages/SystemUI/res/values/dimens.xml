@@ -17,4 +17,32 @@
 <resources>
     <!-- Remove power menu shadow -->
     <dimen name="global_actions_translate">0dp</dimen>
+
+    <!-- Global actions -->
+    <dimen name="global_actions_corner_radius">20.199982dip</dimen>
+
+    <!-- Notifications corner radius -->
+    <dimen name="notification_corner_radius">11.0dip</dimen>
+    <dimen name="notification_corner_radius_small">3.2999878dip</dimen>
+    <dimen name="notification_scrim_corner_radius">23.799957dip</dimen>
+
+    <!-- rounded slider -->
+    <dimen name="rounded_slider_corner_radius">8.699982dip</dimen>
+    <dimen name="rounded_slider_background_rounded_corner">14.599976dip</dimen>
+    <dimen name="rounded_slider_track_corner_radius">@dimen/rounded_slider_corner_radius</dimen>
+
+    <!-- Volume Dialog corner radius -->
+    <dimen name="volume_dialog_slider_corner_radius">6.6999817dip</dimen>
+    <dimen name="volume_dialog_track_corner_radius">@dimen/volume_dialog_slider_corner_radius</dimen>
+    <dimen name="volume_dialog_track_width">0.0dip</dimen>
+    <dimen name="volume_dialog_panel_width_half">11.099976dip</dimen>
+
+    <!-- QS corner radius -->
+    <dimen name="qs_corner_radius">11.0dip</dimen>
+    <dimen name="qs_footer_action_corner_radius">8.0dip</dimen>
+    <dimen name="qs_security_footer_corner_radius">@dimen/qs_footer_action_corner_radius</dimen>
+
+    <!-- Screenshot corner radius -->
+    <dimen name="screenshot_action_container_corner_radius">8dp</dimen>
+
 </resources>
