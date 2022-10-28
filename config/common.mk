@@ -38,6 +38,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RobotoFallback-VF.ttf
 
+# MiSans
+$(call inherit-product-if-exists, external/misans-fonts/fonts.mk)
+
 # Media
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true
